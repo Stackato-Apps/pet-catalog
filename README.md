@@ -9,16 +9,11 @@ Database configuration
 
 Stackato detects if your application is a JEE application if contains the file /src/main/resources/META-INF/persistence.xml.
 
-The Stackato JEE Framework creates a resources for each service created. In this example, we create a mysql service named 'catalog':
+The Stackato JEE Framework creates a resources for each service created. In this example, we create a mysql service.
 
-	services:
-      		catalog:
-        		type: mysql
+To access to this service, create a persistence-unit in the persistence.xml file (with the name you want) and the binding will be automatic. 
 
-To access to this service, refer it in the persistence.xml file. Create a persistence-unit and add the jta-data-source with the name of the service you have just created.
-In this example, we have:
-
-	<jta-data-source>java:openejb/Resource/catalog</jta-data-source>
+It's that easy!
 
 Building the Application
 ------------------------

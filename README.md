@@ -8,7 +8,7 @@ This example uses the JEE Stackato Framework.
 Database configuration
 ------------------------
 
-Stackato detects if your application is a JEE application if it contains the file /src/main/resources/META-INF/persistence.xml.
+Stackato detects if your application is a JEE application contains the file /src/main/resources/META-INF/persistence.xml.
 
 The Stackato JEE Framework creates a resources for each relationnal database service created. In this example, we create a mysql service.
 
@@ -19,7 +19,7 @@ It's that easy!
 Building the Application
 ------------------------
 
-It is possible to build the application either with Maven or Ant.
+It is possible to build the application either with Ant or Maven.
 
 ### Ant
 

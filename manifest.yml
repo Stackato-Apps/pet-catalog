@@ -2,7 +2,7 @@
 applications:
   target:
     name: pet-catalog
-    mem: 256M
+    mem: 512M
     services:
       catalog:
         type: mysql

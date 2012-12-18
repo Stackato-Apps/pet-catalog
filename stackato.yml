@@ -1,0 +1,12 @@
+name: pet-catalog-newrelic
+framework:
+  type: java_ee
+mem: 512M
+services:
+    catalog: mysql
+hooks:
+    pre-running:
+    - unzip newrelic_agent -d $STACKATO_APP_ROOT/tomcat/
+    - rm newrelic_agent.zip
+    - cd $STACKATO_APP_ROOT/tomcat/newrelic
+    - java -jar newrelic.jar install

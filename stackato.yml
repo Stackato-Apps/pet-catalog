@@ -6,7 +6,6 @@ services:
     catalog: mysql
 hooks:
     pre-running:
-    - unzip newrelic_agent -d $STACKATO_APP_ROOT/tomcat/
-    - rm newrelic_agent.zip
+    - mv newrelic $STACKATO_APP_ROOT/tomcat/
     - cd $STACKATO_APP_ROOT/tomcat/newrelic
     - java -jar newrelic.jar install

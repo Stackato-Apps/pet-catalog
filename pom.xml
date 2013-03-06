@@ -42,23 +42,6 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.2</version>
-				<executions>
-					<execution>
-						<id>create-exploded-war</id>
-						<phase>package</phase>
-						<goals>
-							<goal>exploded</goal>
-						</goals>
-						<configuration>
-							<webappDirectory>${project.build.directory}/petcatalog.war</webappDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 	<repositories>

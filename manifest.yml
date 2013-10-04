@@ -6,3 +6,5 @@ applications:
     services:
       catalog:
         type: mysql
+    framework:
+       name: java_ee

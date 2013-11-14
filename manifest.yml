@@ -1,8 +1,0 @@
----
-applications:
-  target:
-    name: pet-catalog
-    mem: 512M
-    services:
-      catalog:
-        type: mysql

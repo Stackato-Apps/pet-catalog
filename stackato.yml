@@ -1,8 +1,0 @@
-name: pet-catalog
-mem: 512M
-framework:
-  name: java_ee
-services:
-  catalog:
-    type: mysql
-app-dir: target

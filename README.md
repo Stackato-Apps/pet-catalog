@@ -3,16 +3,16 @@ Pet Catalog Sample
 
 This is a full JEE6 sample with JSF2.0, EJB3.1 and JPA2.0.
 
-This example uses the JEE Stackato Framework.
+This example uses the JavaEE framework from the Stackato legacy buildpack.
 
 Database configuration
 ------------------------
 
-Stackato detects if your application is a JEE application contains the file /src/main/resources/META-INF/persistence.xml.
+Because we have indicated a `framework` tag in the manifest.yml file, Stackato will use the legacy buildpack with the indicated framework (In this case, `java_ee`).
 
-The Stackato JEE Framework creates a resources for each relationnal database service created. In this example, we create a mysql service.
+We have also indicated that the app needs a mysql service, so Stackato will create one and associate it to the application.
 
-To access to this service, there is a persistence-unit tag in the persistence.xml file which binds automatically to your database. 
+To access this service, there is a persistence-unit tag in the persistence.xml file which binds automatically to your database. 
 
 It's that easy!
 
